@@ -54,8 +54,8 @@ spec:
 {%     if kibana_cpu_request is not none and kibana_cpu_request != "" %}
               cpu: "{{ kibana_cpu_request }}"
 {%     endif %}
-{%     if kibana_memory_limit is not none and kibana_memory_limit != "" %}
-              memory: "{{ kibana_memory_limit }}"
+{%     if kibana_memory_request is not none and kibana_memory_request != "" %}
+              memory: "{{ kibana_memory_request }}"
 {%     endif %}
 {%   endif %}
 {% endif %}
