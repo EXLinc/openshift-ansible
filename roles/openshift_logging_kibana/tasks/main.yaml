@@ -232,6 +232,7 @@
     kibana_cpu_limit: "{{ openshift_logging_kibana_cpu_limit }}"
     kibana_cpu_request: "{{ openshift_logging_kibana_cpu_request | min_cpu(openshift_logging_kibana_cpu_limit | default(none)) }}"
     kibana_memory_limit: "{{ openshift_logging_kibana_memory_limit }}"
+    kibana_memory_request: "{{ openshift_logging_kibana_memory_request }}"
     kibana_proxy_cpu_limit: "{{ openshift_logging_kibana_proxy_cpu_limit }}"
     kibana_proxy_cpu_request: "{{ openshift_logging_kibana_proxy_cpu_request | min_cpu(openshift_logging_kibana_proxy_cpu_limit | default(none)) }}"
     kibana_proxy_memory_limit: "{{ openshift_logging_kibana_proxy_memory_limit }}"
